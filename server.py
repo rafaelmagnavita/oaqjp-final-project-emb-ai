@@ -9,7 +9,7 @@ def emot_detector():
     response = emotion_detector(text_to_analyze)
     if response is None:
         return "Invalid input ! Try again."
-    else
+    else:
         result = {
             'anger': response['anger'],
             'disgust': response['disgust'],
