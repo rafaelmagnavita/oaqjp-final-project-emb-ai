@@ -1,10 +1,6 @@
 import requests
 import json
 
-def higherValue(old_value,new_value):
-    if(old_value < new_value):
-        old_value = new_value
-
 def emotion_detector(text_to_analyse):
     url = 'https://sn-watson-emotion.labs.skills.network/v1/watson.runtime.nlp.v1/NlpService/EmotionPredict'
     myobj = { "raw_document": { "text": text_to_analyse } }
